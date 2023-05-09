@@ -9,3 +9,5 @@ terraform.tfvars
 
 # VS Code Workspace file to ignote"
 *.code-workspace
+# Excluding output location of PEM file
+ec2_key_pair/
