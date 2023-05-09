@@ -45,7 +45,11 @@ variable "tags" {
 //----------------------------------------------------------------------
 // AWS VPC Variables
 //----------------------------------------------------------------------
-
+variable "vpc_cidr" {
+  description = "CIDR associated with the VPC to be created"
+  default     = "10.0.0.0/16"
+  type        = string
+}
 
 variable "public_subnet_cidrs" {
   description = "List of CIDR blocks for public subnets"
