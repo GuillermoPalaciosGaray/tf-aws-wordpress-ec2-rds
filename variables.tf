@@ -41,7 +41,28 @@ variable "tags" {
 //----------------------------------------------------------------------
 // AWS EC2 Variables
 //----------------------------------------------------------------------
+variable "ec2_instance_type" {
+    type        =  string
+    description = "AWS EC2 Instance Type"
+    default     = "t2.micro"
+}
+variable "ignore_ami_changes" {
+    type        =  bool
+    description = "Whether changes to the AMI ID changes should be ignored by Terraform. Note - changing this value will result in the replacement of the instance"
+    default     = false
+}
 
+variable "aws_key_pair_name" {
+    type        =  string
+    description = "AWS EC2 Key pair needed to be associated with EC2"
+    default     = "terraform-managed-key"
+}
+
+variable "user_data" {
+  description = "The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see user_data_base64 instead"
+  type        = string
+  default     = null
+}
 //----------------------------------------------------------------------
 // AWS VPC Variables
 //----------------------------------------------------------------------
