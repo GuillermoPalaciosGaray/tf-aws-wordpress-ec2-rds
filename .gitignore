@@ -1,0 +1,10 @@
+# Local .terraform directories
+.terraform*
+#.tf state files
+*.tfstate.*
+
+# use other *.tfvars files for parametrization of config-modules
+terraform.tfvars
+
+# VS Code Workspace file to ignote"
+*.code-workspace
