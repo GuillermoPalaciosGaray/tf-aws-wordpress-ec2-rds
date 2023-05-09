@@ -78,15 +78,10 @@ variable "public_subnet_cidrs" {
   type        = list
 }
 
-variable "private_subnet_cidrs" {
-  description = "List of CIDR blocks for private subnets"
-  default     = ["10.0.100.0/24"]
-  type        = list
-}
 
 variable "database_subnets_cidrs" {
   description = "List of CIDR blocks for db subnets"
-  default     = ["10.0.200.0/24"]
+  default     = ["10.0.200.0/24","10.0.201.0/24"]
   type        = list
 }
 
