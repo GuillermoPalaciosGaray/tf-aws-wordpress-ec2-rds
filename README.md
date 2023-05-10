@@ -7,4 +7,4 @@ The template is going to work if you run below commands on your machine, all the
 2. ``` terraform plan ```
 3. ``` terraform apply ```
 
-If you want to modify any of the default value please create your custom .tfvars file
+If you want to modify any of the default values please create your custom .tfvars file
